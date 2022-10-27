@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(7, 100px);
+    grid-template-rows: 100px 100px 150px 100px 100px;
+    gap: 30px 30px;
+    grid-template-areas:
+    "a a a a a a b"
+    "c d d d d e b"
+    "c f g g g e b"
+    "c f h h h h b"
+    "c i i i i i i" ;
+}
+
+.rect_haut_vert {
+    grid-area: a;
+    background-color: green;
+}
+
+.rect_droite_vert {
+    grid-area: b;
+    background-color: green;
+}
+
+.rect_gauche_vert {
+    grid-area: c;
+    background-color: green;
+}
+
+.rect_milieu_haut_bleu {
+    grid-area: d;
+    background-color: blue;
+}
+
+.rect_milieu_droite_bleu {
+    grid-area: e;
+    background-color: blue;
+}
+
+.rect_milieu_gauche_bleu {
+    grid-area: f;
+    background-color: blue;
+}
+
+.rect_orange {
+    grid-area: g;
+    background-color: orange;
+}
+
+.rect_milieu_bas_bleu {
+    grid-area: h;
+    background-color: blue;
+}
+
+.rect_bas_vert {
+    grid-area: i;
+    background-color: green;
+}
